@@ -21,14 +21,18 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Button!",
+	Name = "swing",
 	Callback = function()
+			while true do
       		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Clicked"):FireServer()
+wait(0.0000001) 
+			end
+
   	end    
 })
 
 Tab:AddButton({
-	Name = "Button!",
+	Name = "sell",
 	Callback = function()
       		eu.CFrame = CFrame.new(533, 184, 151) 
   	end    
